@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import user from "@testing-library/user-event"
-import App from "./App";
+import App from "../App";
 
 test('Can receive a new user and show it on a list', () => {
         // Rnder App Component

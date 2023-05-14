@@ -1,6 +1,6 @@
 import {findByRole, render, screen} from '@testing-library/react'
 import user from '@testing-library/user-event'
-import UserForm from './UserForm'
+import UserForm from '../UserForm'
 
 
 test('UFT-1: Shows two inputs and a button', () => {
