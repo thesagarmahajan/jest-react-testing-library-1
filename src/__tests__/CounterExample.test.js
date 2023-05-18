@@ -2,8 +2,8 @@ import { render } from "@testing-library/react";
 import CounterExample from "../CounterExample";
 import { screen } from "@testing-library/react";
 import user from '@testing-library/user-event'
- 
-test.only('Testing CounterExample', () => {
+import renderer from 'react-test-renderer'
+test('Testing CounterExample', () => {
     render(<CounterExample />)
 
     let [incButton, decButton, resetButton] = screen.getAllByRole('button')
@@ -22,3 +22,8 @@ test.only('Testing CounterExample', () => {
     user.click(resetButton)
     expect(heading.textContent).toBe("0")
 });
+
+/* test('Demonstrating Snapshot Testing', () => {
+    const tree = renderer.create(<CounterExample />).toJSON()
+    expect(tree).toMatchSnapshot()
+}); */

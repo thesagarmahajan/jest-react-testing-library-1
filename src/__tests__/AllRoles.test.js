@@ -21,7 +21,7 @@ test('Demonstrating getByRole()', () => {
 
 });
 
-test.only('Demonstrating getByTestId()', () => {
+test('Demonstrating getByTestId()', () => {
     render(<AllRoles />)
     /* let headings = screen.getAllByRole("heading")
     console.log(headings.length) */

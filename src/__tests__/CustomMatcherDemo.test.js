@@ -30,7 +30,7 @@ test('Checking two buttons (Without custom matcher)', () => {
     expect(buttons).toHaveLength(2)
 });
 
-test.only('Checking two buttons (With custom matcher)', () => {
+test('Checking two buttons (With custom matcher)', () => {
     render(<CustomMatcherDemo />)
     const form = screen.getByRole("form")
     expect(form).toContainRole("button", 1)
